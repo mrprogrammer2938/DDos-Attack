@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# This code write by (Ms.nope)
+# This code write by (Mr.nope)
 # DDos Attack
 from colorama import Fore,init
 import time
@@ -24,7 +24,7 @@ print color.green + """
          | |) || |) || (_) |\__ \    / _ \  |  _||  _|/ _` |/ _| | / /  
          |___/ |___/  \___/ |___/   /_/ \_\  \__| \__|\__,_|\__| |_\_\  \n""" + color.blue + """
      ----[    This code write by (Ms.nope)   ]---
-     -------[ github :""" + color.blue + """ https://github.com/msprogrammer2938/ ]-----------""" + color.End      
+     -------[ github :""" + color.blue + """ https://github.com/mrprogrammer2938/ ]-----------""" + color.End      
 web = raw_input("\nEnter Target ip: ")
 time.sleep(1)
 port = input("\nEnter Target port: ")
