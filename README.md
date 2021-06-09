@@ -27,5 +27,9 @@ cd Update
 ./update
 ```
 
+#### LICENSE
+[MIT](https://github.com/mrprogrammer2938/DDos-Attack/blob/master/LICENSE)
+
 ### [Mr.nope](https://github.com/mrprogrammer2938) Account...
 [Instagram](https://instagram.com/programmer2938)
+
