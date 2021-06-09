@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+# This code write by Mr.nope
 printf '\033]2;Installing\a'
 clear
 echo ""
