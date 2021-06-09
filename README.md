@@ -20,6 +20,11 @@ python ddosattack.py
 
 ###### This program runs with root!
 
+****Run Root****
+```
+sudo su
+```
+
 #### Updating...
 ```
 cd Update
