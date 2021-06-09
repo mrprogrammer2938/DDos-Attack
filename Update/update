@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+# This code write by Mr.nope
+clear
+if [[ "$id -u" -ne 0 ]]; then
+  echo "Please Run This Programm as Root!"
+  exit 1
+fi
+clear
+echo "Updating DDos-Attack Tool..."
+sleep 2
+cd .. && rm -r DDos-Attack && git clone https://github.com/mrprogrammer2938/DDos-Attack && cd DDos-Attack && bash install.sh
+echo ""
+echo "Updating..., Finish...!"
+echo ""
+exit 1
