@@ -17,5 +17,15 @@ bash install.sh
 python ddosattack.py
 
 ```
+
+####### This program runs with root!
+
+#### Updating...
+```
+cd Update
+
+./update
+```
+
 ### [Mr.nope](https://github.com/mrprogrammer2938) Account...
 [Instagram](https://instagram.com/programmer2938)
