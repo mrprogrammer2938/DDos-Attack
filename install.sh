@@ -16,6 +16,7 @@ sudo apt install python
 sudo apt install python-pip
 pip install --upgrade pip
 chmod +x DDos.py
+chmod +x uninstall.sh
 cd Update && chmod +x update && cd ..
 pip install requirments.txt
 echo ""
