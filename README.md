@@ -1,4 +1,4 @@
-# DDos-attack
+# DDos-Attack
 This code write by [Mr.nope](https://github.com/mrprogrammer2938/)
 ## Scr
 [![image](https://user-images.githubusercontent.com/78996423/121282998-aa031600-c8ef-11eb-85be-d035d975778c.png)](https://github.com/mrprogrammer2938/DDos-Attack)
@@ -18,7 +18,7 @@ python ddosattack.py
 
 ```
 
-###### This program runs with root!
+***** This program runs with root!*****
 
 ****Run Root...****
 ```
@@ -30,6 +30,11 @@ sudo su
 cd Update
 
 ./update
+```
+
+###### Uninstalling...
+```
+./uninstall.sh
 ```
 
 #### LICENSE
