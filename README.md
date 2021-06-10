@@ -18,7 +18,7 @@ python ddosattack.py
 
 ```
 
-***** This program runs with root!*****
+**** This program runs with root!****
 
 ****Run Root...****
 ```
