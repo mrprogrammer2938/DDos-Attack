@@ -12,6 +12,7 @@ function main() {
 		clear
 		echo ""
 		echo "Installing... "
+		chmod +x DDos.py
 		sleep 1
 		echo "   ____  ____   __   ____     __  ____  ____  __    ___  __ _ "
 		echo "  (    \(    \ /  \ / ___)   / _\(_  _)(_  _)/ _\  / __)(  / )"
