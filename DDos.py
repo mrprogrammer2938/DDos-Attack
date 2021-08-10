@@ -53,15 +53,13 @@ def menu():
     victim_ip = socket.gethostbyname(web)
     ##################################################
     UDP_PORT = port
-    time.sleep(2)
-    MESSAGE = "01010101001010101101010"
     time.sleep(1)
     os.system("clear")
-    print color.red + "=============================================================================\n" + color.End
-    print"Target IP:", victim_ip
+    print(color.red + "=============================================================================\n" + color.End)
+    print("Target IP:", victim_ip)
     time.sleep(1)
-    print"\nTarget port:", UDP_PORT
-    color.red + "=============================================================================\n" + color.End
+    print("\nTarget port:", UDP_PORT)
+    color.red + "=============================================================================\n" + color.End)
     time.sleep(3)
     def run(k):
         while True:
@@ -76,11 +74,11 @@ if __name__ == '__main__':
         try:
            menu()
         except EOFError:
-            print "\nCtrl + D"
-            print "\nExiting..."
+            print("\nCtrl + D")
+            print("\nExiting...")
             sys.exit()
     except KeyboardInterrupt:
-        print "\nCtrl + C"
-        print "\nExiting..."
+        print("\nCtrl + C")
+        print("\nExiting...")
         sys.exit()
 # Thanks For using :)
