@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 # This code write by Mr.nope
-# DDos-Attack v1.5.2
-if [[ "$(id -u)" -ne 0 ]]; then
+# DDos-Attack v2.0.0
+if [[ "$(id -u)" -ne 0 ]]; 
+then
   echo "
 Please, Run This programm as Root!
 "
