@@ -10,7 +10,7 @@ printf '\033]2;DDos-attack/Updating\a'
 clear
 echo "Updating DDos-Attack Tool..."
 sleep 2
-cd .. && rm -r DDos-Attack && git clone https://github.com/mrprogrammer2938/DDos-Attack && cd DDos-Attack && bash install.sh
+cd .. && cd .. && rm -r DDos-Attack && git clone https://github.com/mrprogrammer2938/DDos-Attack && cd DDos-Attack && bash install.sh
 echo "
 Updating..., Finish...!
 
