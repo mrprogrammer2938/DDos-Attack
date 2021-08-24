@@ -23,18 +23,18 @@ function main() {
         echo "   Version: 2.0.0"
         echo ""
 	sleep 1
-	apt install python
         apt install python3
 	apt install python3-pip
-	pip install --upgrade pip3
+	pip3 install --upgrade pip
 	chmod +x uninstall.sh
 	echo "
 Finish...!
 
 "
-	echo ""
-	echo "usage: python DDos.py"
-	echo ""
+	echo "
+usage: 
+	python DDos.py
+"
 	exit 1
 }
 main
