@@ -1,7 +1,7 @@
 # DDos-Attack
 <hr>
 
-This code write by [Mr.nope](https://github.com/mrprogrammer2938/)
+This code write by [Sina Meysami](https://github.com/mrprogrammer2938/)
 <br>
 
 ```
