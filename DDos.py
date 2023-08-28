@@ -46,7 +46,7 @@ def menu():
     | |_|   || |_|   ||  |_|  ||_____  |       |       |  |   |    |   |  |       ||      _||     |_
     |       ||       ||       | _____| |       |   _   |  |   |    |   |  |   _   ||     |_ |    _  |
     |______| |______| |_______||_______|       |__| |__|  |___|    |___|  |__| |__||_______||___| |_|\n""" + color.blue + """
-         ----[    This code write by (Mr.nope)   ]---
+         ----[    This code write by Sina Meysami   ]---
         -------[ github :""" + color.blue + """ https://github.com/mrprogrammer2938 ]-----------""" + color.End)
     host = input("\nEnter Host: ")
     time.sleep(1)
